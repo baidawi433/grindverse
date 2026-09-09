@@ -1,0 +1,40 @@
+export const UpgradeConfig = {
+  upgrades: [
+    {
+      id: "attack",
+      name: "Attack",
+      description: "+2 Attack per level",
+      baseCost: 10,
+      costGrowth: 1.17,
+      statKey: "attack",
+      valuePerLevel: 2,
+    },
+    {
+      id: "attackSpeed",
+      name: "Attack Speed",
+      description: "+0.05 Attack Speed per level",
+      baseCost: 15,
+      costGrowth: 1.2,
+      statKey: "attackSpeed",
+      valuePerLevel: 0.05,
+    },
+    {
+      id: "maxHp",
+      name: "Max HP",
+      description: "+15 Max HP per level (langsung heal)",
+      baseCost: 12,
+      costGrowth: 1.17,
+      statKey: "maxHp",
+      valuePerLevel: 15,
+    },
+    {
+      id: "criticalChance",
+      name: "Critical Chance",
+      description: "+1% Critical Chance per level",
+      baseCost: 20,
+      costGrowth: 1.22,
+      statKey: "criticalChance",
+      valuePerLevel: 0.01,
+    },
+  ],
+};

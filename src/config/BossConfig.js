@@ -1,0 +1,35 @@
+export const BossConfig = {
+  forest_guardian: {
+    id: "forest_guardian",
+    name: "Forest Guardian",
+    level: 10,
+    hp: 800,
+    damage: 18,
+    defense: 8,
+    speed: 50,
+    attackSpeed: 0.7,
+    xpReward: 250,
+    goldReward: 180,
+    color: "#166534",
+    size: { width: 64, height: 64 },
+    phases: [
+      { hpThreshold: 1.0, name: "Awakening", speedMultiplier: 1, damageMultiplier: 1 },
+      { hpThreshold: 0.6, name: "Enraged", speedMultiplier: 1.3, damageMultiplier: 1.3 },
+      { hpThreshold: 0.25, name: "Desperate", speedMultiplier: 1.6, damageMultiplier: 1.6 },
+    ],
+    specialAttack: {
+      cooldown: 5,
+      telegraphDuration: 1,
+      damageMultiplier: 2.5,
+      range: 90,
+    },
+    uniqueLoot: {
+      name: "Guardian's Heart",
+      slot: "ring",
+      rarityKey: "legendary",
+      color: "#f97316",
+      bonuses: { criticalChance: 0.05, maxHp: 50 },
+      sellValue: 60,
+    },
+  },
+};
